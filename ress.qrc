@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/new/home">
+        <file>dostart/index.html</file>
+        <file>dostart/res/colour.js</file>
+        <file>dostart/res/main.css</file>
+        <file>dostart/res/main.js</file>
+        <file>ressources/edit-clear-locationbar-ltr.png</file>
+        <file>ressources/favorites.png</file>
+        <file>ressources/go-jump-locationbar.png</file>
+        <file>ressources/go-next.png</file>
+        <file>ressources/go-previous.png</file>
+        <file>ressources/task-reject.png</file>
+        <file>ressources/view-refresh.png</file>
+        <file>ressources/internet-web-browser.png</file>
+    </qresource>
+</RCC>
