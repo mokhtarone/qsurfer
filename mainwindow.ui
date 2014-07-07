@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1358</width>
+    <height>757</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Qsurfer</string>
+  </property>
+  <property name="documentMode">
+   <bool>false</bool>
+  </property>
+  <property name="tabShape">
+   <enum>QTabWidget::Triangular</enum>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>30</y>
+      <width>1361</width>
+      <height>761</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="1" column="0">
+      <layout class="QVBoxLayout" name="verticalLayout" stretch="0">
+       <property name="sizeConstraint">
+        <enum>QLayout::SetDefaultConstraint</enum>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QGroupBox" name="groupBox">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="title">
+          <string/>
+         </property>
+         <property name="flat">
+          <bool>false</bool>
+         </property>
+         <widget class="QWidget" name="gridLayoutWidget_2">
+          <property name="geometry">
+           <rect>
+            <x>1</x>
+            <y>0</y>
+            <width>1361</width>
+            <height>691</height>
+           </rect>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_2">
+           <property name="sizeConstraint">
+            <enum>QLayout::SetNoConstraint</enum>
+           </property>
+           <property name="horizontalSpacing">
+            <number>1</number>
+           </property>
+           <property name="verticalSpacing">
+            <number>0</number>
+           </property>
+           <item row="0" column="0">
+            <widget class="QTabWidget" name="tabWidget">
+             <property name="contextMenuPolicy">
+              <enum>Qt::DefaultContextMenu</enum>
+             </property>
+             <property name="tabShape">
+              <enum>QTabWidget::Triangular</enum>
+             </property>
+             <property name="currentIndex">
+              <number>0</number>
+             </property>
+             <property name="tabsClosable">
+              <bool>true</bool>
+             </property>
+             <widget class="QWidget" name="tab">
+              <attribute name="title">
+               <string>Tab</string>
+              </attribute>
+              <widget class="QWebView" name="webView">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>0</y>
+                 <width>1351</width>
+                 <height>611</height>
+                </rect>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>800</width>
+                 <height>600</height>
+                </size>
+               </property>
+               <property name="url">
+                <url>
+                 <string>qrc:/new/home/dostart/index.html</string>
+                </url>
+               </property>
+              </widget>
+             </widget>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLineEdit" name="QUrlbar">
+    <property name="geometry">
+     <rect>
+      <x>8</x>
+      <y>0</y>
+      <width>751</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>qrc:/new/home/dostart/index.html</string>
+    </property>
+    <property name="dragEnabled">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="Searchbar">
+    <property name="geometry">
+     <rect>
+      <x>1130</x>
+      <y>0</y>
+      <width>191</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>956</x>
+      <y>0</y>
+      <width>171</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Rechercher sur DuckDuckGo</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Gosearch">
+    <property name="geometry">
+     <rect>
+      <x>1320</x>
+      <y>0</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="ress.qrc">
+      <normaloff>:/new/home/ressources/go-jump-locationbar.png</normaloff>:/new/home/ressources/go-jump-locationbar.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>24</width>
+      <height>24</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="progressBartim">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>0</y>
+      <width>151</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="value">
+     <number>0</number>
+    </property>
+    <property name="textVisible">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="clear">
+    <property name="geometry">
+     <rect>
+      <x>900</x>
+      <y>0</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="ress.qrc">
+      <normaloff>:/new/home/ressources/edit-clear-locationbar-ltr.png</normaloff>:/new/home/ressources/edit-clear-locationbar-ltr.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>24</width>
+      <height>24</height>
+     </size>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1358</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionOuvrir_un_nouvelle_fenetre"/>
+    <addaction name="actionQuitter"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>Edition</string>
+    </property>
+    <addaction name="actionCopier"/>
+    <addaction name="actionCopier_2"/>
+    <addaction name="actionColler"/>
+    <addaction name="actionSellectionner_tout"/>
+   </widget>
+   <widget class="QMenu" name="menuAide">
+    <property name="title">
+     <string>Aide</string>
+    </property>
+    <addaction name="actionQt_version"/>
+    <addaction name="actionAboutqsurfer"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuEdit"/>
+   <addaction name="menuAide"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="separator"/>
+   <addaction name="actionprecedent"/>
+   <addaction name="actionavantprec"/>
+   <addaction name="separator"/>
+   <addaction name="actionActualiser"/>
+   <addaction name="separator"/>
+   <addaction name="actionArreter"/>
+   <addaction name="separator"/>
+   <addaction name="actionHome"/>
+   <addaction name="separator"/>
+   <addaction name="actionGo"/>
+   <addaction name="separator"/>
+   <addaction name="actionExternel_browser"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionprecedent">
+   <property name="icon">
+    <iconset resource="ress.qrc">
+     <normaloff>:/new/home/ressources/go-previous.png</normaloff>:/new/home/ressources/go-previous.png</iconset>
+   </property>
+   <property name="text">
+    <string>&lt;&lt;</string>
+   </property>
+   <property name="toolTip">
+    <string>Precedent</string>
+   </property>
+  </action>
+  <action name="actionavantprec">
+   <property name="icon">
+    <iconset resource="ress.qrc">
+     <normaloff>:/new/home/ressources/go-next.png</normaloff>:/new/home/ressources/go-next.png</iconset>
+   </property>
+   <property name="text">
+    <string>&gt;&gt;</string>
+   </property>
+  </action>
+  <action name="actionActualiser">
+   <property name="icon">
+    <iconset resource="ress.qrc">
+     <normaloff>:/new/home/ressources/view-refresh.png</normaloff>:/new/home/ressources/view-refresh.png</iconset>
+   </property>
+   <property name="text">
+    <string>Actualiser</string>
+   </property>
+  </action>
+  <action name="actionArreter">
+   <property name="icon">
+    <iconset resource="ress.qrc">
+     <normaloff>:/new/home/ressources/task-reject.png</normaloff>:/new/home/ressources/task-reject.png</iconset>
+   </property>
+   <property name="text">
+    <string>Arreter</string>
+   </property>
+  </action>
+  <action name="actionGo">
+   <property name="icon">
+    <iconset resource="ress.qrc">
+     <normaloff>:/new/home/ressources/go-jump-locationbar.png</normaloff>:/new/home/ressources/go-jump-locationbar.png</iconset>
+   </property>
+   <property name="text">
+    <string>Go</string>
+   </property>
+  </action>
+  <action name="actionHome">
+   <property name="icon">
+    <iconset resource="ress.qrc">
+     <normaloff>:/new/home/ressources/favorites.png</normaloff>:/new/home/ressources/favorites.png</iconset>
+   </property>
+   <property name="text">
+    <string>Home</string>
+   </property>
+  </action>
+  <action name="actionCopier">
+   <property name="text">
+    <string>Couper</string>
+   </property>
+  </action>
+  <action name="actionCopier_2">
+   <property name="text">
+    <string>Copier</string>
+   </property>
+  </action>
+  <action name="actionColler">
+   <property name="text">
+    <string>Coller</string>
+   </property>
+  </action>
+  <action name="actionSellectionner_tout">
+   <property name="text">
+    <string>Sellectionner tout</string>
+   </property>
+  </action>
+  <action name="actionOuvrir_un_nouvelle_fenetre">
+   <property name="text">
+    <string>Ouvrir un nouvelle fenetre</string>
+   </property>
+  </action>
+  <action name="actionQuitter">
+   <property name="text">
+    <string>Quitter</string>
+   </property>
+  </action>
+  <action name="actionQt_version">
+   <property name="text">
+    <string>Qt version</string>
+   </property>
+  </action>
+  <action name="actionAboutqsurfer">
+   <property name="text">
+    <string>A propos de Qsurfer</string>
+   </property>
+  </action>
+  <action name="actionExternel_browser">
+   <property name="icon">
+    <iconset resource="ress.qrc">
+     <normaloff>:/new/home/ressources/internet-web-browser.png</normaloff>:/new/home/ressources/internet-web-browser.png</iconset>
+   </property>
+   <property name="text">
+    <string>Externel browser</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>QWebView</class>
+   <extends>QWidget</extends>
+   <header>QtWebKitWidgets/QWebView</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="ress.qrc"/>
+ </resources>
+ <connections/>
+</ui>
